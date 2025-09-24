@@ -10,9 +10,9 @@ FBXHeaderExtension:  {
 		Month: 9
 		Day: 24
 		Hour: 10
-		Minute: 59
-		Second: 49
-		Millisecond: 510
+		Minute: 57
+		Second: 11
+		Millisecond: 255
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.3.4"
 	OtherFlags:  {
@@ -76,7 +76,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2627255464288, "Scene", "Scene" {
+	Document: 2627373487088, "Scene", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -221,7 +221,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2614250717312, "Geometry::Scene", "Mesh" {
+	Geometry: 2627931825728, "Geometry::Scene", "Mesh" {
 		Vertices: *24 {
 			a: -50,-50,50,-50,50,50,50,50,50,50,-50,50,-50,50,-50,50,50,-50,-50,-50,-50,50,-50,-50
 		} 
@@ -330,7 +330,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2624076520352, "Model::BosquesdelPortal_Dummy_T1", "Null" {
+	Model: 2624076526352, "Model::BosquesdelPortal_Dummy_T4_T5", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -341,7 +341,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 2624076518352, "Model::Cube__2___1_", "Mesh" {
+	Model: 2624076530352, "Model::Cube__1_", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationOrder", "enum", "", "",4
@@ -349,14 +349,14 @@ Objects:  {
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",8651.93023681641,2821.69990539551,-2490.51990509033
-			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0,-73.1560974121094,0
-			P: "Lcl Scaling", "Lcl Scaling", "", "A",39.5717391967773,41.8439292907715,14.5778684616089
+			P: "Lcl Translation", "Lcl Translation", "", "A",778.169965744019,2754.12006378174,-2354.43992614746
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-0,16.8438720703125,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",80.9271926879883,43.2135009765625,14.2444019317627
 		}
 		Shading: W
 		Culling: "CullingOff"
 	}
-	Material: 2624066420064, "Material::DefaultHDMaterial", "" {
+	Material: 2627932178304, "Material::DefaultHDMaterial", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -377,17 +377,17 @@ Objects:  {
 
 Connections:  {
 	
-	;Model::BosquesdelPortal_Dummy_T1, Model::RootNode
-	C: "OO",2624076520352,0
+	;Model::BosquesdelPortal_Dummy_T4_T5, Model::RootNode
+	C: "OO",2624076526352,0
 	
-	;Model::Cube__2___1_, Model::BosquesdelPortal_Dummy_T1
-	C: "OO",2624076518352,2624076520352
+	;Model::Cube__1_, Model::BosquesdelPortal_Dummy_T4_T5
+	C: "OO",2624076530352,2624076526352
 	
-	;Material::DefaultHDMaterial, Model::Cube__2___1_
-	C: "OO",2624066420064,2624076518352
+	;Material::DefaultHDMaterial, Model::Cube__1_
+	C: "OO",2627932178304,2624076530352
 	
-	;Geometry::Scene, Model::Cube__2___1_
-	C: "OO",2614250717312,2624076518352
+	;Geometry::Scene, Model::Cube__1_
+	C: "OO",2627931825728,2624076530352
 }
 ;Takes section
 ;----------------------------------------------------
